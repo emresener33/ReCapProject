@@ -8,8 +8,8 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface IRentalDal: IEntityRepository<Rental>
+    public interface ICustomerDal : IEntityRepository<Customer>
     {
-        List<CarRentalDetailDto> GetCarRentalDetails(Expression<Func<Rental, bool>> filter = null);
+        List<CustomerDetailDto> GetCustomerDetail(Expression<Func<Customer, bool>> filter = null);
     }
 }
