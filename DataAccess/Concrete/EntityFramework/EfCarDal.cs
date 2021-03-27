@@ -38,7 +38,6 @@ namespace DataAccess.Concrete.EntityFramework
 
 
         }
-
         public List<CarDetailDto> GetCarsDetail(Expression<Func<Car, bool>> filter = null)
         {
             using (ReCapProjectContext context = new ReCapProjectContext())
