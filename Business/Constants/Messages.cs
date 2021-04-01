@@ -1,12 +1,19 @@
-﻿using Entities.Concrete;
+﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
 {
     public static class Messages
     {
+        public static readonly string CannotAdd="Bir arabanın en fazla 5 resmi olabilir";
+        public static readonly string ImageAdded= "Resim eklendi";
+        public static readonly string ImageDeleted="Resim silindi";
+        public static readonly string ImageNotExist= "Görüntü mevcut değil";
+        public static readonly string CarNotExists= "Car does not exist";
         public static string CarAdded = "Araç Eklendi";
         public static string CarUpdated = "Araç Güncellendi";
         public static string CarsListed = "Mevcut Araçlar Listeleniyor...";
@@ -48,5 +55,12 @@ namespace Business.Constants
 
         public static string MaintenanceTime = "Sistem Bakımda";
         public static string CarImageLimitExceeded = "Fotoğraf yükleme limitine takıldınız. En fazla 5 fotoğraf eklenebilir.";
+        public static string AuthorizationDenied="Yetkiniz yok";
+        public static string UserRegistered="Kayıt oldu";
+        public static string UserNotFound="Kullanıcı bulunamdı";
+        public static string PasswordError="Parola hataso";
+        public static string SuccessfulLogin="Başarılı giriş";
+        public static string UserAlreadyExists="Kullanıcı mevcut";
+        public static string AccessTokenCreated = "Access token başarıyla oluşturuldu";
     }
 }
